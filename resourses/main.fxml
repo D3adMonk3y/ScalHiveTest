@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test2.Controller.Controller">
+
+      <TableView fx:id="userTable" layoutX="26.0" layoutY="14.0" prefHeight="286.0" prefWidth="564.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="46.0" text="id" />
+          <TableColumn fx:id="nameColumn" prefWidth="165.0" text="User name" />
+            <TableColumn fx:id="levelColumn" prefWidth="84.0" text="Level" />
+            <TableColumn fx:id="experienceColumn" prefWidth="91.0" text="Experience" />
+            <TableColumn fx:id="APDColumn" prefWidth="106.0" text="Action per Day" />
+            <TableColumn fx:id="paidDaysColumn" prefWidth="71.0" text="Paid days" />
+        </columns>
+      </TableView>
+      <Button layoutX="300.0" layoutY="335.0" mnemonicParsing="false" onAction="#addUser" text="Add" />
+      <Button layoutX="354.0" layoutY="335.0" mnemonicParsing="false" onAction="#doAction" text="Do Action" />
+      <Button layoutX="482.0" layoutY="335.0" mnemonicParsing="false" onAction="#nextDay" text="Next Day" />
+      <Button layoutX="436.0" layoutY="335.0" mnemonicParsing="false" onAction="#makePaid" text="Pay" />
+
+</AnchorPane>
