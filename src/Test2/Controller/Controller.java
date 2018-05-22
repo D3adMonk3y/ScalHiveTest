@@ -74,7 +74,7 @@ public class Controller implements Initializable {
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setTitle("Add new User");
+            stage.setTitle("Add new User2");
             stage.setScene(new Scene(root));
             stage.show();
             stage.setOnHiding((WindowEvent we) ->{
@@ -99,7 +99,7 @@ public class Controller implements Initializable {
         }else{
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Error");
-            alert.setContentText("No User has been selected!");
+            alert.setContentText("No User2 has been selected!");
             alert.showAndWait();
         }
     }
@@ -116,7 +116,7 @@ public class Controller implements Initializable {
         }else{
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Error");
-            alert.setContentText("No User has been selected!");
+            alert.setContentText("No User2 has been selected!");
             alert.showAndWait();
         }
     }

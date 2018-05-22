@@ -63,7 +63,7 @@ public class addController implements Initializable {
         Pattern paidDaysPattern = Pattern.compile(paidDaysRegex);
 
         //checks if the name of new user is satisfies the conditions that it is not empty and consists only with "[a-z][A-Z][0-9]-._"
-        if(!userName.getText().equals("") && namePattern.matcher(userName.getText()).matches()) {
+        if(!userName.getText().equals("") || namePattern.matcher(userName.getText()).matches()) {
             User user = new User(userName.getText(), isPaid.isSelected());
             if(isPaid.isSelected()){
                 //checks if userPaidDays text field matches regular expression
@@ -73,7 +73,7 @@ public class addController implements Initializable {
                     //if text filed is not satisfies the conditions  then alert dialog is displayed
                     Alert alert = new Alert(Alert.AlertType.WARNING);
                     alert.setTitle("Error");
-                    alert.setContentText("User paid days text field must be fill up only with number.");
+                    alert.setContentText("User2 paid days text field must be fill up only with number.");
                     alert.showAndWait();
                 }
             }

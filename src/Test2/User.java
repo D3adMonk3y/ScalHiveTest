@@ -1,9 +1,8 @@
 package Test2;
 
-import java.io.Serializable;
 import java.util.Random;
 
-public class User implements Serializable {
+public class User{
     private static int userCount = 0;
     private int id;
     private String userName;
